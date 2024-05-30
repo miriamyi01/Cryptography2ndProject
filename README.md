@@ -139,16 +139,16 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
 
 1. Si deseas utilizar el contenedor Docker como un entorno de desarrollo, monta tu proyecto actual en el contenedor Docker con el siguiente comando:
 
-  ```bash
-  docker run --rm -it --workdir=/app -v ${PWD}:/app oqs-go /bin/bash
-  ```
+      ```bash
+      docker run --rm -it --workdir=/app -v ${PWD}:/app oqs-go /bin/bash
+      ```
 
 2. Una vez ejecutado el comando anterior, para ejecutar programas Python, utiliza el siguiente comando:
 
     ```bash
-  python3 ML-KEM.py
-  python3 ML-DSA.py
-  python3 SLH-DSA.py
-  ```
+    python3 ML-KEM.py
+    python3 ML-DSA.py
+    python3 SLH-DSA.py
+    ```
 
-  *NOTA: Asegúrate de estar en la carpeta correcta donde se encuentran los programas necesarios antes de ejecutar los comandos.*
+   *NOTA: Asegúrate de estar en la carpeta correcta donde se encuentran los programas necesarios antes de ejecutar los comandos.*
