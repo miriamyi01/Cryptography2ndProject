@@ -50,6 +50,8 @@ def realizar_firma_y_verificacion():
             plt.xlabel('Tarea')  # Etiqueta del eje x
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Rendimiento de Firmado y Verificación con SPHINCS+')  # Título del gráfico
+            # Guarda el gráfico en un archivo PNG antes de mostrarlo
+            plt.savefig('SLH-DSA.png')
             plt.show()  # Muestra el gráfico
 
             # Imprime resultados

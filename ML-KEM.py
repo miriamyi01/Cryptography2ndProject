@@ -41,6 +41,8 @@ def perform_key_encapsulation():
             plt.xlabel('Tarea')  # Etiqueta del eje x
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Tiempo de Encapsulamiento y Desencapsulamiento')  # Título del gráfico
+            # Guarda el gráfico en un archivo PNG antes de mostrarlo
+            plt.savefig('ML-KEM.png')
             plt.show()  # Muestra el gráfico
 
             # Imprime resultados

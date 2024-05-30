@@ -48,6 +48,8 @@ def realizar_firma_y_verificacion():
             plt.xlabel('Tarea')  # Etiqueta del eje x
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Rendimiento de Firmado y Verificación')  # Título del gráfico
+            # Guarda el gráfico en un archivo PNG antes de mostrarlo
+            plt.savefig('ML-DSA.png')
             plt.show()  # Muestra el gráfico
 
             # Imprime resultados
