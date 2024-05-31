@@ -18,6 +18,11 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
 
 &nbsp;
 ## Configuración del Entorno la ejecución del proyecto en Windows
+### Prerequisistos:
+1. Asegúrate de tener Visual Studio instalado.
+
+   *Nota: Si no lo tienes instalado, puedes descargarlo desde [este enlace](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false).*
+
 ### Creación y activación del entorno virtual
 1. Abre una consola Powershell como Administrador e introduce los siguientes comandos
    
