@@ -50,8 +50,14 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
     pip install .
     ```
 
-6. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C
+5. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C
    
     ```powershell
     python examples/kem.py
+    ```
+
+6. Ejecuta tus programas dentro del repositorio Cryptography2ndProject, ejecuta tus programas, como por ejemplo ML-KEM.py:
+
+    ```powershell
+    python ML-KEM.py
     ```
