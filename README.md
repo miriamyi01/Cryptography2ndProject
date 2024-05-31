@@ -18,7 +18,11 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
 
 &nbsp;
 ## Configuración del Entorno la ejecución del proyecto en Windows
-Requirements:
+### Prerequisistos:
+* Asegúrate de tener Visual Studio instalado.
+
+   *Nota: Si no lo tienes instalado, puedes descargarlo desde [este enlace](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false).*
+   
 * Python 3.4 o mayor
 * C ++ compiler (gcc, mingw, cygwin, etc.)
 * NMake (Incluido en el compilador C ++ de Visual Studio)
@@ -51,8 +55,14 @@ Requirements:
     pip install .
     ```
 
-6. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C
+5. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C
    
     ```powershell
     python examples/kem.py
+    ```
+
+6. Ejecuta tus programas dentro del repositorio Cryptography2ndProject, ejecuta tus programas, como por ejemplo ML-KEM.py:
+
+    ```powershell
+    python ML-KEM.py
     ```
