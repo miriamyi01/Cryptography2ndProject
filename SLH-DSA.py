@@ -51,7 +51,7 @@ def realizar_firma_y_verificacion(algoritmo: str):
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Rendimiento de Firmado y Verificación con SPHINCS+')  # Título del gráfico
             # Guarda el gráfico en un archivo PNG antes de mostrarlo
-            pathToSaveGraphs = os.path.join('.','grpahics')
+            pathToSaveGraphs = os.path.join('.','graphics')
             if not os.path.exists(pathToSaveGraphs):
                 os.makedirs(pathToSaveGraphs)
             

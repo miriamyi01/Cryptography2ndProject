@@ -1,11 +1,3 @@
-graphics/ML-DSA-44.png
-graphics/ML-DSA-65.png
-graphics/ML-DSA-87.png
-graphics/ML-KEM-512.png
-graphics/ML-KEM-768.png
-graphics/ML-KEM-1024.png
-graphics/SPHINCS+-SHA2-128f-simple.png
-graphics/SPHINCS+-SHA2-192f-simple.png
-graphics/SPHINCS+-SHA2-256f-simple.png
-__pycache__/*
-.vscode/*
+graphics/
+__pycache__/
+.vscode/
