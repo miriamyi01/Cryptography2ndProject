@@ -1,5 +1,13 @@
 # 🔐 Second Cryptography Project
+### Facultad de Ingeniería - UNAM
+### Criptografía 2024-2
+### Integrantes:
+- Piña Félix Emilio
+- Reyes Mendoza Miriam Guadalupe
+- Santiago Alejandro Aldo
+- Walls Chávez Luis Fernando
 
+&nbsp;
 ## 🕵️‍♂️ POST-QUANTUM CRYPTOGRAPHY PROJECT
 
 Este proyecto explora la frontera de la criptografía post-cuántica, centrándose en esquemas diseñados para resistir las capacidades computacionales de los ordenadores cuánticos. Las áreas clave de interés incluyen:
