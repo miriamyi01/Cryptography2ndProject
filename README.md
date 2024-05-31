@@ -18,6 +18,12 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
 
 &nbsp;
 ## Configuración del Entorno la ejecución del proyecto en Windows
+Requirements:
+* Python 3.4 o mayor
+* C ++ compiler (gcc, mingw, cygwin, etc.)
+* NMake (Incluido en el compilador C ++ de Visual Studio)
+
+
 ### Creación y activación del entorno virtual
 1. Abre una consola Powershell como Administrador e introduce los siguientes comandos
    
