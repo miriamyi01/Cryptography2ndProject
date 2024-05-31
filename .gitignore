@@ -8,3 +8,4 @@ graphics/SPHINCS+-SHA2-128f-simple.png
 graphics/SPHINCS+-SHA2-192f-simple.png
 graphics/SPHINCS+-SHA2-256f-simple.png
 __pycache__/*
+.vscode/*

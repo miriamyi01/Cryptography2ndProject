@@ -1,3 +1,4 @@
+import os
 import time  # Importa el módulo time para medir el tiempo de ejecución
 import matplotlib.pyplot as plt  # Importa la biblioteca matplotlib para graficar los resultados
 import oqs  # Importa la biblioteca Open Quantum Safe (OQS) para operaciones criptográficas
@@ -41,7 +42,11 @@ def perform_key_encapsulation(algoritmo: str):
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Tiempo de Encapsulamiento y Desencapsulamiento')  # Título del gráfico
             # Guarda el gráfico en un archivo PNG antes de mostrarlo
-            plt.savefig('.\\graphics\\'+algoritmo +'.png')
+            pathToSaveGraphs = os.path.join('.','grpahics')
+            if not os.path.exists(pathToSaveGraphs):
+                os.makedirs(pathToSaveGraphs)
+            
+            plt.savefig(os.path.join(pathToSaveGraphs, algoritmo+'.png'))
 
             # Imprime resultados
             print(f"\nTiempo de encapsulamiento del mensaje del destinatario con la clave del remitente: {tiempo_encapsulamiento} [ms]")  # Imprime el tiempo de encapsulamiento

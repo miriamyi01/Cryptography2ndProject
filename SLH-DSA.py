@@ -1,6 +1,7 @@
 import oqs  # Importa la biblioteca Open Quantum Safe (OQS) para operaciones criptográficas
 import time  # Importa el módulo time para medir el tiempo de ejecución
 import matplotlib.pyplot as plt  # Importa la biblioteca matplotlib para graficar los resultados
+import os
 
 def realizar_firma_y_verificacion(algoritmo: str):
     """
@@ -50,7 +51,11 @@ def realizar_firma_y_verificacion(algoritmo: str):
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Rendimiento de Firmado y Verificación con SPHINCS+')  # Título del gráfico
             # Guarda el gráfico en un archivo PNG antes de mostrarlo
-            plt.savefig('.\\graphics\\'+algoritmo +'.png')
+            pathToSaveGraphs = os.path.join('.','grpahics')
+            if not os.path.exists(pathToSaveGraphs):
+                os.makedirs(pathToSaveGraphs)
+            
+            plt.savefig(os.path.join(pathToSaveGraphs, algoritmo+'.png'))
             #plt.show()  # Muestra el gráfico
 
             # Imprime resultados
