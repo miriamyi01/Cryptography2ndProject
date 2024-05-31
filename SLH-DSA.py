@@ -2,7 +2,7 @@ import oqs  # Importa la biblioteca Open Quantum Safe (OQS) para operaciones cri
 import time  # Importa el módulo time para medir el tiempo de ejecución
 import matplotlib.pyplot as plt  # Importa la biblioteca matplotlib para graficar los resultados
 
-def realizar_firma_y_verificacion():
+def realizar_firma_y_verificacion(algoritmo: str):
     """
     Realiza la generación y verificación de firmas utilizando el algoritmo SPHINCS+.
 
@@ -20,9 +20,8 @@ def realizar_firma_y_verificacion():
     mensaje = mensaje_claro.encode()  # Convierte el mensaje a bytes
 
     # Crea instancias de firma tanto para el firmante como para el verificador
-    sigalg = "SPHINCS+-SHA2-128f-simple"  # Algoritmo de firma post-cuántica SPHINCS+
-    with oqs.Signature(sigalg) as firmante:  # Crea una instancia del firmante
-        with oqs.Signature(sigalg) as verificador:  # Crea una instancia del verificador
+    with oqs.Signature(algoritmo) as firmante:  # Crea una instancia del firmante
+        with oqs.Signature(algoritmo) as verificador:  # Crea una instancia del verificador
             # El firmante genera su par de claves
             clave_publica_firmante = firmante.generate_keypair()  # Genera el par de claves del firmante
 
@@ -51,8 +50,8 @@ def realizar_firma_y_verificacion():
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Rendimiento de Firmado y Verificación con SPHINCS+')  # Título del gráfico
             # Guarda el gráfico en un archivo PNG antes de mostrarlo
-            plt.savefig('SLH-DSA.png')
-            plt.show()  # Muestra el gráfico
+            plt.savefig('.\\graphics\\'+algoritmo +'.png')
+            #plt.show()  # Muestra el gráfico
 
             # Imprime resultados
             print(f"\nEl tiempo para la generación de la firma es: {tiempo_firma} [ms]")  # Imprime el tiempo de firma
@@ -64,4 +63,4 @@ def realizar_firma_y_verificacion():
             print(f"\n¿La firma es válida?\n{es_valida}")  # Imprime si la firma es válida o no
 
 # Ejecuta la función para realizar la firma y verificación
-realizar_firma_y_verificacion()
+#realizar_firma_y_verificacion()

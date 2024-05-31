@@ -2,7 +2,7 @@ import time  # Importa el módulo time para medir el tiempo de ejecución
 import matplotlib.pyplot as plt  # Importa la biblioteca matplotlib para graficar los resultados
 import oqs  # Importa la biblioteca Open Quantum Safe (OQS) para operaciones criptográficas
 
-def perform_key_encapsulation():
+def perform_key_encapsulation(algoritmo: str):
     """
     Realiza el encapsulamiento y desencapsulamiento de un mensaje utilizando el algoritmo de criptografía post-cuántica Kyber768.
     Mide el tiempo de encapsulamiento y desencapsulamiento, y muestra los resultados en un gráfico de barras.
@@ -10,9 +10,8 @@ def perform_key_encapsulation():
     """
 
     # Selecciona el mecanismo de KEM "Kyber768" y crea instancias para el remitente y el destinatario
-    kemalg = "Kyber768"  # Algoritmo de criptografía post-cuántica Kyber768
-    with oqs.KeyEncapsulation(kemalg) as sender:  # Crea una instancia del remitente
-        with oqs.KeyEncapsulation(kemalg) as receiver:  # Crea una instancia del destinatario
+    with oqs.KeyEncapsulation(algoritmo) as sender:  # Crea una instancia del remitente
+        with oqs.KeyEncapsulation(algoritmo) as receiver:  # Crea una instancia del destinatario
 
             # El remitente genera su par de claves
             public_key_sender = sender.generate_keypair()  # Genera el par de claves del remitente
@@ -42,8 +41,7 @@ def perform_key_encapsulation():
             plt.ylabel('Tiempo (ms)')  # Etiqueta del eje y
             plt.title('Tiempo de Encapsulamiento y Desencapsulamiento')  # Título del gráfico
             # Guarda el gráfico en un archivo PNG antes de mostrarlo
-            plt.savefig('ML-KEM.png')
-            plt.show()  # Muestra el gráfico
+            plt.savefig('.\\graphics\\'+algoritmo +'.png')
 
             # Imprime resultados
             print(f"\nTiempo de encapsulamiento del mensaje del destinatario con la clave del remitente: {tiempo_encapsulamiento} [ms]")  # Imprime el tiempo de encapsulamiento
@@ -58,4 +56,4 @@ def perform_key_encapsulation():
             else:
                 print("Los secretos compartidos no coinciden.")  # Imprime si los secretos compartidos no coinciden
 
-perform_key_encapsulation()  # Llama a la función perform_key_encapsulation() para realizar el encapsulamiento y desencapsulamiento de un mensaje
+#perform_key_encapsulation()  # Llama a la función perform_key_encapsulation() para realizar el encapsulamiento y desencapsulamiento de un mensaje
