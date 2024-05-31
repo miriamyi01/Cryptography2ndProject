@@ -29,7 +29,7 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
 
 
 ### Creación y activación del entorno virtual
-1. Abre una consola Powershell como Administrador e introduce los siguientes comandos
+1. Abre una consola Powershell como Administrador e introduce los siguientes comandos:
    
     ```powershell
     python -m venv venv
@@ -37,7 +37,7 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
     python -m ensurepip --upgrade
     ```
 
-2. Clona el repositorio dentro del venv y reúne los requerimientos de pip
+2. Clona el repositorio dentro del *venv* y reúne los requerimientos de *pip*:
    
     ```powershell
     cd .\venv\
@@ -46,7 +46,7 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
     pip install -r requirements.txt
     ```
 
-4. Clona el repositorio de la biblioteca de bindings liboqs-python y agrégalo a pip
+4. Clona el repositorio de la biblioteca de *bindings liboqs-python* y agrégalo a *pip*:
    
     ```powershell
     cd ..
@@ -55,13 +55,13 @@ Este proyecto explora la frontera de la criptografía post-cuántica, centrándo
     pip install .
     ```
 
-5. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C
+5. Ejecuta los ejemplos de la librería para que se instale automáticamente la biblioteca necesaria en C:
    
     ```powershell
     python examples/kem.py
     ```
 
-6. Ejecuta tus programas dentro del repositorio Cryptography2ndProject, ejecuta tus programas, como por ejemplo ML-KEM.py:
+6. Ejecuta tus programas dentro del repositorio *Cryptography2ndProject*, ejecuta tus programas, como por ejemplo *ML-KEM.py*:
 
     ```powershell
     python ML-KEM.py
