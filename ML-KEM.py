@@ -47,7 +47,9 @@ def perform_key_encapsulation(algoritmo: str):
                 os.makedirs(pathToSaveGraphs)
             
             plt.savefig(os.path.join(pathToSaveGraphs, algoritmo+'.png'))
-
+            plt.clf()
+            plt.close()
+            
             # Imprime resultados
             print(f"\nTiempo de encapsulamiento del mensaje del destinatario con la clave del remitente: {tiempo_encapsulamiento} [ms]")  # Imprime el tiempo de encapsulamiento
             print(f"\nTiempo de desencapsulamiento del mensaje del destinatario utilizando la clave del remitente: {tiempo_desencapsulamiento} [ms]")  # Imprime el tiempo de desencapsulamiento

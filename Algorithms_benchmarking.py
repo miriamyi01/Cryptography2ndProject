@@ -1,5 +1,4 @@
 import importlib
-import threading
 
 ml_kem = importlib.import_module('ML-KEM')
 ml_dsa = importlib.import_module('ML-DSA')

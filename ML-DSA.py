@@ -54,6 +54,8 @@ def realizar_firma_y_verificacion(algoritmo: str):
                 os.makedirs(pathToSaveGraphs)
             
             plt.savefig(os.path.join(pathToSaveGraphs, algoritmo+'.png'))
+            plt.clf()
+            plt.close()
 
             # Imprime resultados
             print(f"\nEl tiempo para la generación de la firma es: {tiempo_firma} [ms]")  # Imprime el tiempo de firma
